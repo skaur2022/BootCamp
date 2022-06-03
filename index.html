@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Open Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Boot Camp</title>
+<script>
+
+    function displaypdf() {
+        var pdfFrame = document.getElementById("pdfFrame");
+        var instrucFrame = document.getElementById("instrucFrame");
+        instrucFrame.style.height = "0px";
+        instrucFrame.style.marginBottom = "0px";
+        pdfFrame.style.height = "600px";
+        pdfFrame.style.marginBottom = "20px";
+    }
+
+    function  displayinstruc() {
+        var pdfFrame = document.getElementById("pdfFrame");
+        var instrucFrame = document.getElementById("instrucFrame");
+        pdfFrame.style.height = "0px";
+        pdfFrame.style.marginBottom = "0px";
+        instrucFrame.style.height = "600px";
+        instrucFrame.style.marginBottom = "20px";
+    }
+</script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Boot Camp</a>
+    </div>
+
+    <!-- Side navbar -->
+    <div class="sidenav">        
+        <h3 class="sidenavHead">Languages</h3>
+        <a href="Getting started with the web.pdf" target="pdf" onclick="displaypdf()">HTML and CSS</a>
+
+        <br>
+        <br>
+        
+        <h3 class="sidenavHead">Project</h3>
+        <a href="Animation - Steps.pdf" target="instruc" onclick="displayinstruc()">Instructions</a>
+        <br>
+
+        <h3 class="sidenavHead">Project</h3>
+        <a href="SummerCamp-AnimationCode.pdf" target="instruc" onclick="displayinstruc()">Animation Code</a>
+        <br>
+
+        <h3 class="sidenavHead">Project</h3>
+        <a href="images/panda_colour.png" target="instruc" onclick="displayinstruc()">Download Panda Image</a>
+
+    </div>
+
+    <div class="animationSec">
+
+        <!-- Animation caption -->
+        <h2 class="objectiveHead">Project</h2>
+        <p>The animation below is what you will create today!</p>
+
+        <br>
+
+        <!-- Animation -->
+        <div class="container">
+            <div class="walkPanda"></div>
+            <div class="road"></div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Learning objectives-->
+        <div class="objectiveSec">
+            <h2 class="objectiveHead">Learning Objectives</h2>
+            
+            <p>
+                <ul id="objective">
+                    <li>Write code using HTML and CSS</li>
+                    <li>Create an animation using CSS properties</li>
+                </ul>
+            </p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- HTML and CSS pdf -->
+        <iframe style="border:none;" name="pdf" width="100%" id="pdfFrame" title="HTML and CSS PDF"></iframe>
+
+        <!-- Animation instructions -->
+        <iframe style="border:none;" name="instruc" width="100%" id="instrucFrame" title="Animation Instructions"></iframe>
+    </div>
+
+    <footer>
+        <p id="foot">&COPY;All rights reserved</p>
+    </footer>
+</body>
+</html>
